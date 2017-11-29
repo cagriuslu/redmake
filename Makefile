@@ -1,5 +1,4 @@
-# redmake Makefile
-# Version 0.1
+# redmake-0.1 Makefile
 
 # Build Options
 #LIBRARY_NAME          =
