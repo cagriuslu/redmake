@@ -1,4 +1,4 @@
-# redmake-0.1 Makefile
+# redmake-0.2 Makefile
 
 # Build Options
 #LIBRARY_NAME          =
@@ -85,7 +85,7 @@ clean:
 REDMAKE_INCLUDE_DIRECTORIES = $(foreach redmakelib, $(REDMAKE_DEPENDENCIES), -I../$(redmakelib)/inc)
 REDMAKE_LIBRARIES = $(foreach redmakelib, $(REDMAKE_DEPENDENCIES), $(if $(wildcard ../$(redmakelib)/src/*.c*), -L../$(redmakelib)/lib -l$(redmakelib)))
 redmake_dependencies:
-	$(foreach redmakelib, $(REDMAKE_DEPENDENCIES), $(MAKE) -C ../$(redmakelib);)
+	$(foreach redmakelib, $(REDMAKE_DEPENDENCIES), $(MAKE) -C ../$(redmakelib) LIBRARY_NAME="" COMMON_COMPILER_FLAGS="" C_COMPILER_FLAGS="" CPP_COMPILER_FLAGS="" INCLUDE_DIRECTORIES="" LINKER_FLAGS="" REDMAKE_DEPENDENCIES="" LINK_TYPE="";)
 
 # create library file
 ifeq ($(LINK_TYPE), static)

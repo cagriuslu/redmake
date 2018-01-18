@@ -1,14 +1,14 @@
-# redmake-0.1 Individual Project Makefile
+# redmake-0.2 Individual Project Makefile
 
 # Build Options
-LIBRARY_NAME          =
-COMMON_COMPILER_FLAGS =
-C_COMPILER_FLAGS      =
-CPP_COMPILER_FLAGS    =
-INCLUDE_DIRECTORIES   =
-LINKER_FLAGS          =
-REDMAKE_DEPENDENCIES  =
-LINK_TYPE             =
+override LIBRARY_NAME          =
+override COMMON_COMPILER_FLAGS =
+override C_COMPILER_FLAGS      =
+override CPP_COMPILER_FLAGS    =
+override INCLUDE_DIRECTORIES   =
+override LINKER_FLAGS          =
+override REDMAKE_DEPENDENCIES  =
+override LINK_TYPE             =
 
 ##################
 ## Call redmake ##
